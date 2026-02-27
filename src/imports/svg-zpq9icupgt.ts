@@ -1,0 +1,3 @@
+export default {
+p38ac19c0: "M4.5 6H0V4.5H4.5V0H6V4.5H10.5V6H6V10.5H4.5V6V6",
+}
