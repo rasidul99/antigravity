@@ -62,7 +62,7 @@ const translations: Record<string, Record<Language, string>> = {
     bn: '১০০% প্রাকৃতিক',
     en: '100% Natural'
   },
-  
+
   // Trust Assurance Section
   'trust.title.prefix': {
     bn: 'আমাদের উপর কেন',
@@ -123,18 +123,26 @@ const translations: Record<string, Record<Language, string>> = {
     en: 'Ingredients'
   },
   'ingredients.subtitle': {
-    bn: 'আমরা ব্যবহার করি বিশ্বের সেরা উৎস থেকে সংগৃহীত সম্পূর্ণ প্রাকৃতিক ও ভেষজ উপাদান। প্রতিটি উপাদান বিশুদ্ধ এবং পরীক্ষিত।',
-    en: "We use completely natural and herbal ingredients collected from the world's best sources. Each ingredient is pure and tested."
+    bn: 'দীর্ঘদিনের শারীরিক দুর্বলতা কাটিয়ে উঠতে শত বছরের ব্যবহৃত প্রাকৃতিক উপাদানগুলো আমরা ব্যবহার করেছি Sultan E Tarkeeb-এ।',
+    en: 'We have used centuries-old natural ingredients in Sultan E Tarkeeb to help you overcome long-term physical weakness.'
+  },
+  'ingredients.list.title': {
+    bn: 'উপাদানসমূহের মধ্যে রয়েছে:',
+    en: 'Ingredients include:'
+  },
+  'ingredients.list.items': {
+    bn: 'মুকাদ্দাস, ধাউতমূল, জাফরান, ঈশ্বরমূল, ভুঁই কুমরী, গাম্ভারী মূল, শতমূল, তোকমা, পদ্ম মধু, কালোজিরা মধু, কালোজিরা, অনন্তমূল, যষ্টিমধু, ইসুবগুলের ভুষি, বিভিন্ন বাদাম (কাজু, কাঠবাদাম, আখরোট, পেস্তা), খেজুর, কিসমিস, ঘি, দুধসহ মোট ৫৫টি নির্বাচিত উপাদান।',
+    en: 'Muqaddas, Dhautamul, Saffron, Ishwarmul, Bhui Kumri, Gambhari root, Shatamul, Tokma, Lotus honey, Black seed honey, Black cumin, Anantamul, Licorice, Psyllium husk, various nuts (cashew, almond, walnut, pistachio), date, raisin, ghee, milk, and a total of 55 selected ingredients.'
   },
   'ingredients.secret.title': {
-    bn: 'আরও ১১+ টি গোপন ভেষজ উপাদান',
-    en: '11+ More Secret Herbal Ingredients'
+    bn: 'আরও নির্দিষ্ট ভেষজ উপাদান',
+    en: 'More Specific Herbal Ingredients'
   },
   'ingredients.secret.desc': {
     bn: 'যা আপনার শক্তি বৃদ্ধিতে সহায়তা করে',
     en: 'Which helps increase your energy'
   },
-  
+
   // Ingredient Items
   'ingredient.1.name': { bn: 'শিলাজিৎ', en: 'Shilajit' },
   'ingredient.1.desc': { bn: 'শক্তি ও সজীবতা', en: 'Energy & Vitality' },
@@ -352,54 +360,54 @@ const translations: Record<string, Record<Language, string>> = {
     bn: 'সচরাচর জিজ্ঞাসিত প্রশ্ন',
     en: 'Frequently Asked Questions'
   },
-  
+
   // Reviews
   'review.1.name': { bn: 'রহিম উদ্দিন', en: 'Rahim Uddin' },
-  'review.1.text': { 
-    bn: 'সুলতান-ই-তারকীব ব্যবহার করে আমি সত্যিই উপকৃত। আমার এনার্জি লেভেল এখন অনেক ভালো।', 
-    en: 'I really benefited from using Sultan-E-Tarkeeb. My energy level is much better now.' 
+  'review.1.text': {
+    bn: 'সুলতান-ই-তারকীব ব্যবহার করে আমি সত্যিই উপকৃত। আমার এনার্জি লেভেল এখন অনেক ভালো।',
+    en: 'I really benefited from using Sultan-E-Tarkeeb. My energy level is much better now.'
   },
   'review.2.name': { bn: 'আব্দুল করিম', en: 'Abdul Karim' },
-  'review.2.text': { 
-    bn: 'অসাধারণ একটি পণ্য! কোনো পার্শ্বপ্রতিক্রিয়া নেই এবং খুব দ্রুত কাজ করে। সবাইকে ব্যবহার করার পরামর্শ দিচ্ছি।', 
-    en: 'An amazing product! No side effects and works very fast. I recommend everyone to use it.' 
+  'review.2.text': {
+    bn: 'অসাধারণ একটি পণ্য! কোনো পার্শ্বপ্রতিক্রিয়া নেই এবং খুব দ্রুত কাজ করে। সবাইকে ব্যবহার করার পরামর্শ দিচ্ছি।',
+    en: 'An amazing product! No side effects and works very fast. I recommend everyone to use it.'
   },
   'review.3.name': { bn: 'জামাল হোসেন', en: 'Jamal Hossain' },
-  'review.3.text': { 
-    bn: 'আমি গত ১ মাস ধরে এটি খাচ্ছি। আমার ঘুমের সমস্যা দূর হয়েছে এবং শরীর অনেক ঝরঝরে লাগে।', 
-    en: 'I have been taking this for the last 1 month. My sleep problems are gone and my body feels very fresh.' 
+  'review.3.text': {
+    bn: 'আমি গত ১ মাস ধরে এটি খাচ্ছি। আমার ঘুমের সমস্যা দূর হয়েছে এবং শরীর অনেক ঝরঝরে লাগে।',
+    en: 'I have been taking this for the last 1 month. My sleep problems are gone and my body feels very fresh.'
   },
   'review.4.name': { bn: 'সুমন আহমেদ', en: 'Sumon Ahmed' },
-  'review.4.text': { 
-    bn: 'পণ্যের মান খুব ভালো। প্যাকেজিংটা আরও সুন্দর হতে পারতো, তবে কার্যকারিতা নিয়ে কোনো প্রশ্ন নেই।', 
-    en: 'Product quality is very good. Packaging could have been nicer, but there is no question about effectiveness.' 
+  'review.4.text': {
+    bn: 'পণ্যের মান খুব ভালো। প্যাকেজিংটা আরও সুন্দর হতে পারতো, তবে কার্যকারিতা নিয়ে কোনো প্রশ্ন নেই।',
+    en: 'Product quality is very good. Packaging could have been nicer, but there is no question about effectiveness.'
   },
   'review.5.name': { bn: 'বিল্লাল হোসেন', en: 'Billal Hossain' },
-  'review.5.text': { 
-    bn: 'খুবই ভালো প্রোডাক্ট। আমি আমার বন্ধুদেরও এটা সাজেস্ট করেছি। ধন্যবাদ আপনাদের।', 
-    en: 'Very good product. I have suggested it to my friends too. Thank you.' 
+  'review.5.text': {
+    bn: 'খুবই ভালো প্রোডাক্ট। আমি আমার বন্ধুদেরও এটা সাজেস্ট করেছি। ধন্যবাদ আপনাদের।',
+    en: 'Very good product. I have suggested it to my friends too. Thank you.'
   },
 
   // FAQs
   'faq.1.q': { bn: 'এটি কি সম্পূর্ণ প্রাকৃতিক উপাদান দিয়ে তৈরি?', en: 'Is it made with 100% natural ingredients?' },
-  'faq.1.a': { 
-    bn: 'জি, সুলতান-ই-তারকীব ১০০% প্রাকৃতিক ভেষজ উপাদান যেমন শিলাজিৎ, জাফরান, অশ্বগন্ধা এবং খাঁটি মধু দিয়ে তৈরি। এতে কোনো ক্ষতিকর কেমিক্যাল নেই।', 
-    en: 'Yes, Sultan-E-Tarkeeb is made with 100% natural herbal ingredients like Shilajit, Saffron, Ashwagandha and Pure Honey. It has no harmful chemicals.' 
+  'faq.1.a': {
+    bn: 'জি, সুলতান-ই-তারকীব ১০০% প্রাকৃতিক ভেষজ উপাদান যেমন শিলাজিৎ, জাফরান, অশ্বগন্ধা এবং খাঁটি মধু দিয়ে তৈরি। এতে কোনো ক্ষতিকর কেমিক্যাল নেই।',
+    en: 'Yes, Sultan-E-Tarkeeb is made with 100% natural herbal ingredients like Shilajit, Saffron, Ashwagandha and Pure Honey. It has no harmful chemicals.'
   },
   'faq.2.q': { bn: 'এর কোনো পার্শ্বপ্রতিক্রিয়া আছে কি?', en: 'Does it have any side effects?' },
-  'faq.2.a': { 
-    bn: 'না, এটি সম্পূর্ণ ভেষজ উপাদান দিয়ে তৈরি হওয়ায় এর কোনো পার্শ্বপ্রতিক্রিয়া নেই। তবে নির্দেশিত মাত্রায় সেবন করার পরামর্শ দেওয়া হয়।', 
-    en: 'No, as it is made with completely herbal ingredients, it has no side effects. However, it is advised to consume in the directed dosage.' 
+  'faq.2.a': {
+    bn: 'না, এটি সম্পূর্ণ ভেষজ উপাদান দিয়ে তৈরি হওয়ায় এর কোনো পার্শ্বপ্রতিক্রিয়া নেই। তবে নির্দেশিত মাত্রায় সেবন করার পরামর্শ দেওয়া হয়।',
+    en: 'No, as it is made with completely herbal ingredients, it has no side effects. However, it is advised to consume in the directed dosage.'
   },
   'faq.3.q': { bn: 'কতদিন ব্যবহার করলে ফলাফল পাওয়া যাবে?', en: 'How long does it take to see results?' },
-  'faq.3.a': { 
-    bn: 'সাধারণত ৭-১০ দিন নিয়মিত সেবনের পর থেকেই আপনি পরিবর্তন অনুভব করবেন। তবে পূর্ণ ফলাফলের জন্য ১-২ মাস নিয়মিত সেবন করা উচিত।', 
-    en: 'Usually you will feel the change after 7-10 days of regular use. However, for full results, it should be consumed regularly for 1-2 months.' 
+  'faq.3.a': {
+    bn: 'সাধারণত ৭-১০ দিন নিয়মিত সেবনের পর থেকেই আপনি পরিবর্তন অনুভব করবেন। তবে পূর্ণ ফলাফলের জন্য ১-২ মাস নিয়মিত সেবন করা উচিত।',
+    en: 'Usually you will feel the change after 7-10 days of regular use. However, for full results, it should be consumed regularly for 1-2 months.'
   },
   'faq.4.q': { bn: 'অর্ডার করার নিয়ম কী?', en: 'How to order?' },
-  'faq.4.a': { 
-    bn: 'আমাদের ওয়েবসাইটে \'অর্ডার করুন\' বাটনে ক্লিক করে আপনার নাম, ঠিকানা ও ফোন নম্বর দিয়ে অর্ডার কনফার্ম করতে পারবেন। অথবা আমাদের হটলাইনে কল করেও অর্ডার করতে পারেন।', 
-    en: 'You can confirm the order by clicking the \'Order Now\' button on our website and providing your name, address and phone number. Or you can also order by calling our hotline.' 
+  'faq.4.a': {
+    bn: 'আমাদের ওয়েবসাইটে \'অর্ডার করুন\' বাটনে ক্লিক করে আপনার নাম, ঠিকানা ও ফোন নম্বর দিয়ে অর্ডার কনফার্ম করতে পারবেন। অথবা আমাদের হটলাইনে কল করেও অর্ডার করতে পারেন।',
+    en: 'You can confirm the order by clicking the \'Order Now\' button on our website and providing your name, address and phone number. Or you can also order by calling our hotline.'
   },
 
   // Trust Stats Section
