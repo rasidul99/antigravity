@@ -71,21 +71,15 @@ export function IngredientsShowcase() {
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-5xl font-bold text-[#1F2937] font-['Li_Ador_Noirrit'] mb-4">
-            {t('ingredients.title.prefix')} <span className="text-[#8dc540]">{t('ingredients.title.suffix')}</span>
+            উপকারিতা
           </h2>
           <p className="text-[#4B5563] text-lg md:text-xl max-w-3xl mx-auto leading-relaxed mb-6">
             {t('ingredients.subtitle')}
           </p>
-          <div className="text-[#4B5563] max-w-4xl mx-auto leading-relaxed bg-white p-6 md:p-8 rounded-2xl border border-[#8dc540]/20 shadow-[0_4px_20px_-4px_rgba(141,197,64,0.1)] mb-4">
-            <span className="font-bold text-[#1F2937] block mb-3 text-xl md:text-2xl">{t('ingredients.list.title')}</span>
-            <p className="text-lg md:text-xl text-[#374151] leading-relaxed">
-              {t('ingredients.list.items')}
-            </p>
-          </div>
         </div>
 
         {/* Ingredients Loop */}
-        <div className="relative w-full overflow-hidden">
+        <div className="relative w-full overflow-hidden mb-12">
           {/* Fade gradients */}
           <div className="absolute left-0 top-0 bottom-0 w-8 md:w-20 bg-gradient-to-r from-[#F9FAFB] to-transparent z-10 pointer-events-none" />
           <div className="absolute right-0 top-0 bottom-0 w-8 md:w-20 bg-gradient-to-l from-[#F9FAFB] to-transparent z-10 pointer-events-none" />
@@ -129,24 +123,16 @@ export function IngredientsShowcase() {
           </motion.div>
         </div>
 
-        {/* Secret Ingredients Banner */}
-        <div className="mt-6 flex justify-center w-full">
-          <div
-            className="w-full max-w-2xl bg-[#8dc540] rounded-2xl px-8 py-5 flex items-center justify-center shadow-md shadow-[#8dc540]/10"
-          >
-            <div className="flex items-center gap-4">
-              <div className="bg-white/20 p-2.5 rounded-full">
-                <Sparkles className="w-6 h-6 text-white animate-pulse" />
-              </div>
-              <div className="text-left">
-                <span className="text-white font-bold text-xl font-['Li_Ador_Noirrit'] block leading-tight">
-                  {t('ingredients.secret.title')}
-                </span>
-                <span className="text-white/90 text-sm font-medium mt-0.5 block">
-                  {t('ingredients.secret.desc')}
-                </span>
-              </div>
+        {/* Ingredients List Box */}
+        <div className="flex justify-center w-full">
+          <div className="text-center max-w-4xl mx-auto leading-relaxed bg-white p-6 md:p-8 rounded-2xl border border-[#8dc540]/20 shadow-[0_4px_20px_-4px_rgba(141,197,64,0.1)]">
+            <div className="flex items-center justify-center gap-2 mb-3">
+              <Sparkles className="w-6 h-6 text-[#8dc540]" />
+              <span className="font-bold text-[#1F2937] text-xl md:text-2xl">{t('ingredients.list.title')}</span>
             </div>
+            <p className="text-lg md:text-xl text-[#374151] leading-relaxed">
+              {t('ingredients.list.items')}
+            </p>
           </div>
         </div>
       </div>
