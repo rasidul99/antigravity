@@ -77,9 +77,9 @@ export function BenefitsGrid() {
   return (
     <section className="py-12 md:py-20 bg-[#1B2B1B] relative overflow-hidden font-['Li_Ador_Noirrit']">
       {/* Background Texture Overlay */}
-      <div 
-        className="absolute inset-0 opacity-5 pointer-events-none" 
-        style={{ 
+      <div
+        className="absolute inset-0 opacity-5 pointer-events-none"
+        style={{
           backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")',
         }}
       >
@@ -104,31 +104,31 @@ export function BenefitsGrid() {
               viewport={{ once: true, margin: "-100px" }}
               transition={{ delay: index * 0.1, duration: 0.6, ease: "easeOut" }}
               className={`
-                relative h-[170px] md:h-[320px] rounded-[20px] md:rounded-[32px] overflow-hidden shadow-2xl transition-all duration-300 transform hover:-translate-y-2
-                flex flex-col items-center justify-center p-3 md:p-8 text-center
+                relative h-full min-h-[200px] md:min-h-[320px] rounded-[20px] md:rounded-[32px] overflow-hidden shadow-2xl transition-all duration-300 transform hover:-translate-y-2
+                flex flex-col items-center justify-center p-4 md:p-8 text-center
                 ${benefit.bgColor}
               `}
             >
               {/* Inner content wrapper */}
               <div className="relative z-10 flex flex-col items-center w-full">
-                
+
                 {/* Professional Icon Circle */}
                 <div className={`
                   w-10 h-10 md:w-24 md:h-24 rounded-full flex items-center justify-center mb-2 md:mb-6 
                   ${benefit.circleColor} backdrop-blur-sm
                   shadow-[inset_0px_2px_4px_rgba(255,255,255,0.1),0px_4px_12px_rgba(0,0,0,0.05)]
                 `}>
-                   <benefit.icon 
-                      className={`${benefit.textColor} w-5 h-5 md:w-9 md:h-9`}
-                      strokeWidth={1.5}
-                   />
+                  <benefit.icon
+                    className={`${benefit.textColor} w-5 h-5 md:w-9 md:h-9`}
+                    strokeWidth={1.5}
+                  />
                 </div>
-                
-                <h3 className={`text-xs md:text-2xl font-bold mb-1 md:mb-3 ${benefit.textColor} font-['Li_Ador_Noirrit'] leading-tight`}>
+
+                <h3 className={`text-base md:text-2xl font-bold mb-1.5 md:mb-3 ${benefit.textColor} font-['Li_Ador_Noirrit'] leading-tight`}>
                   {benefit.title}
                 </h3>
-                
-                <p className={`text-[10px] md:text-base leading-relaxed font-medium ${benefit.descColor} font-['Li_Ador_Noirrit'] max-w-[98%] md:max-w-[90%]`}>
+
+                <p className={`text-[13px] md:text-base leading-relaxed font-medium ${benefit.descColor} font-['Li_Ador_Noirrit'] max-w-[98%] md:max-w-[90%]`}>
                   {benefit.description}
                 </p>
               </div>
