@@ -22,16 +22,16 @@ export function OrderSection() {
     {
       id: 2,
       name: language === 'bn' ? "Sultan E Tarkeeb এনার্জি বুস্টার" : "Sultan E Tarkeeb Energy Booster",
-      weight: language === 'bn' ? "৫০০ গ্রাম" : "500 gm",
-      price: 3150,
+      weight: language === 'bn' ? "৪৫০ গ্রাম" : "450 gm",
+      price: 2750,
       image: productImage,
       isBestValue: true
     },
     {
       id: 1,
       name: language === 'bn' ? "Sultan E Tarkeeb এনার্জি বুস্টার" : "Sultan E Tarkeeb Energy Booster",
-      weight: language === 'bn' ? "২৫০ গ্রাম" : "250 gm",
-      price: 1650,
+      weight: language === 'bn' ? "২২৫ গ্রাম" : "225 gm",
+      price: 1450,
       image: productImage,
       isBestValue: false
     }
@@ -188,7 +188,7 @@ export function OrderSection() {
         };
       }).filter((item): item is { productId: number; name: string; weight: string; quantity: number; price: number } => item !== null);
 
-      const currentShippingCost = shippingLocation === 'inside' ? 70 : 120;
+      const currentShippingCost = 0;
       const currentSubtotal = currentOrderedItems.reduce((sum, item) => sum + (item.price * item.quantity), 0);
       const currentTotal = currentSubtotal + currentShippingCost;
       const districtLabel = districts.find(d => d.value === formData.district)?.label || formData.district;
@@ -298,7 +298,7 @@ ${itemsList}
     return sum + (product ? product.price * quantity : 0);
   }, 0);
 
-  const shippingCost = shippingLocation === 'inside' ? 70 : 120;
+  const shippingCost = 0;
   const total = subtotal + shippingCost;
 
   const orderedItems = selectedProductIds.map(id => {
@@ -657,65 +657,14 @@ ${itemsList}
                   </div>
                 </div>
 
-                <div className="space-y-2">
-                  <label className="block text-sm font-medium text-gray-700 font-['Li_Ador_Noirrit'] mb-2">
-                    {t('order.shipping_area')}
-                  </label>
-
-                  <div className="grid grid-cols-2 gap-3">
-                    <label className={`
-                      relative flex items-center gap-3 p-3 rounded-2xl border cursor-pointer transition-all
-                      ${shippingLocation === 'inside' ? 'border-[#8dc540] bg-white ring-1 ring-[#8dc540]' : 'border-gray-200 bg-white hover:border-gray-300'}
-                    `}>
-                      <div className="relative flex items-center">
-                        <input
-                          type="radio"
-                          name="shipping"
-                          className="peer sr-only"
-                          checked={shippingLocation === 'inside'}
-                          onChange={() => setShippingLocation('inside')}
-                        />
-                        <div className={`
-                          w-5 h-5 rounded-full border border-gray-300 flex items-center justify-center transition-all
-                          peer-checked:border-none peer-checked:bg-[#87c73d]
-                          ${shippingLocation === 'inside' ? 'bg-[#87c73d] border-none' : ''}
-                        `}>
-                          {shippingLocation === 'inside' && (
-                            <div className="w-2 h-2 bg-white rounded-full shadow-sm" />
-                          )}
-                        </div>
-                      </div>
-                      <span className="text-sm md:text-base text-[#334155] font-['Li_Ador_Noirrit']">
-                        {t('order.inside_dhaka')} ({formatNumber(70)}৳)
-                      </span>
-                    </label>
-
-                    <label className={`
-                      relative flex items-center gap-3 p-3 rounded-2xl border cursor-pointer transition-all
-                      ${shippingLocation === 'outside' ? 'border-[#8dc540] bg-white ring-1 ring-[#8dc540]' : 'border-gray-200 bg-white hover:border-gray-300'}
-                    `}>
-                      <div className="relative flex items-center">
-                        <input
-                          type="radio"
-                          name="shipping"
-                          className="peer sr-only"
-                          checked={shippingLocation === 'outside'}
-                          onChange={() => setShippingLocation('outside')}
-                        />
-                        <div className={`
-                          w-5 h-5 rounded-full border border-gray-300 flex items-center justify-center transition-all
-                          peer-checked:border-none peer-checked:bg-[#87c73d]
-                          ${shippingLocation === 'outside' ? 'bg-[#87c73d] border-none' : ''}
-                        `}>
-                          {shippingLocation === 'outside' && (
-                            <div className="w-2 h-2 bg-white rounded-full shadow-sm" />
-                          )}
-                        </div>
-                      </div>
-                      <span className="text-sm md:text-base text-[#334155] font-['Li_Ador_Noirrit']">
-                        {t('order.outside_dhaka')} ({formatNumber(120)}৳)
-                      </span>
-                    </label>
+                <div className="space-y-4 mt-6">
+                  <div className="bg-[#8dc540]/10 border border-[#8dc540]/30 rounded-xl p-4 md:p-5 text-center">
+                    <p className="text-[#1F2937] font-bold text-base md:text-lg mb-1 leading-relaxed font-['Li_Ador_Noirrit']">
+                      সারা বাংলাদেশে হোম ডেলিভারি সম্পূর্ণ ফ্রি।
+                    </p>
+                    <p className="text-[#374151] font-medium text-sm md:text-base font-['Li_Ador_Noirrit']">
+                      আপনি চাইলে আজই অর্ডার কনফার্ম করতে পারেন। <span className="font-bold text-[#8dc540] uppercase tracking-wide ml-1">(Free)</span>
+                    </p>
                   </div>
                 </div>
               </div>
