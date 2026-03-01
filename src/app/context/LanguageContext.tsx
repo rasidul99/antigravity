@@ -89,7 +89,7 @@ const translations: Record<string, Record<Language, string>> = {
     en: 'We ensure every ingredient is completely chemical-free and natural.'
   },
   'trust.2.title': {
-    bn: 'প্রিমিয়াম কোয়ালিটি নিশ্���য়তা',
+    bn: 'প্রিমিয়াম কোয়ালিটি নিশ্চয়তা',
     en: 'Premium Quality Assurance'
   },
   'trust.2.desc': {
