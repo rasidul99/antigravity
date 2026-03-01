@@ -25,15 +25,15 @@ export function Hero() {
     return () => clearInterval(interval);
   }, []);
   return (
-    <section className="relative w-full md:min-h-[90vh] bg-[#F9FAFB] overflow-hidden font-['Li_Ador_Noirrit'] pt-[100px] md:pt-[180px] pb-12 md:pb-[100px] px-4 md:px-8">
+    <section className="relative w-full bg-[#F9FAFB] overflow-hidden font-['Li_Ador_Noirrit'] pt-[110px] md:pt-[140px] pb-12 md:pb-[60px] px-4 md:px-8">
       {/* Background Blurs */}
       <div className="absolute top-[-266px] left-[-266px] w-[800px] h-[800px] bg-[#8dc540]/15 blur-[60px] rounded-full pointer-events-none" />
       <div className="absolute bottom-[-200px] right-[-200px] w-[600px] h-[600px] bg-[#8dc540]/15 blur-[50px] rounded-full pointer-events-none" />
 
       <div className="container mx-auto max-w-7xl h-full flex flex-col md:flex-row items-center gap-12 md:gap-20 relative z-10">
-        
+
         {/* Left Column: Content */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
@@ -109,7 +109,7 @@ export function Hero() {
           <div className="relative flex flex-col items-center gap-6">
             <div className="relative w-[320px] h-[320px] md:w-[450px] md:h-[450px] rounded-[75px] overflow-hidden shadow-2xl bg-white/10 backdrop-blur-sm z-10">
               <AnimatePresence>
-                <motion.div 
+                <motion.div
                   key={currentImageIndex}
                   initial={{ opacity: 0, scale: 0.95 }}
                   animate={{ opacity: 1, scale: 1 }}
@@ -117,10 +117,10 @@ export function Hero() {
                   transition={{ duration: 0.8, ease: "easeInOut" }}
                   className="absolute inset-0 w-full h-full"
                 >
-                  <ImageWithFallback 
-                    src={heroImages[currentImageIndex]} 
-                    alt="Sultan E Tarkeeb Product" 
-                    className="w-full h-full object-cover scale-110" 
+                  <ImageWithFallback
+                    src={heroImages[currentImageIndex]}
+                    alt="Sultan E Tarkeeb Product"
+                    className="w-full h-full object-cover scale-110"
                   />
                 </motion.div>
               </AnimatePresence>
@@ -132,11 +132,10 @@ export function Hero() {
                 <button
                   key={index}
                   onClick={() => setCurrentImageIndex(index)}
-                  className={`h-3 rounded-full transition-all duration-300 ${
-                    index === currentImageIndex 
-                      ? "w-8 bg-[#8dc540]" 
-                      : "w-3 bg-gray-300 hover:bg-[#8dc540]/50"
-                  }`}
+                  className={`h-3 rounded-full transition-all duration-300 ${index === currentImageIndex
+                    ? "w-8 bg-[#8dc540]"
+                    : "w-3 bg-gray-300 hover:bg-[#8dc540]/50"
+                    }`}
                   aria-label={`Go to slide ${index + 1}`}
                 />
               ))}
