@@ -1,33 +1,20 @@
-import { motion, AnimatePresence } from 'motion/react';
+import { motion } from 'motion/react';
 import { ShoppingCart, CheckCircle, ShieldCheck, Leaf, Star } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import { useLanguage } from '../context/LanguageContext';
 
-// Figma Assets
-import imgProduct from "figma:asset/55a06a16a8064de142f2ba0e0b678861ff0c06e1.png";
-import imgProduct2 from "figma:asset/067a97b9a29a0b1c63f0f577122adf2b41bf9376.png";
-import imgProduct3 from "figma:asset/f754fa94ae81e4f8fe284a9dac2ce1ed14fd82da.png";
-
-const heroImages = [imgProduct, '/sdfsdg.png', imgProduct3];
-
 export function Hero() {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const { t } = useLanguage();
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImageIndex((prev) => (prev + 1) % heroImages.length);
-    }, 4000);
-    return () => clearInterval(interval);
-  }, []);
+
   return (
     <section className="relative w-full bg-[#F9FAFB] overflow-hidden font-['Li_Ador_Noirrit'] pt-[80px] md:pt-[140px] pb-7 md:pb-9 px-4 md:px-8">
       {/* Background Blurs */}
       <div className="absolute top-[-266px] left-[-266px] w-[800px] h-[800px] bg-[#8dc540]/15 blur-[60px] rounded-full pointer-events-none" />
       <div className="absolute bottom-[-200px] right-[-200px] w-[600px] h-[600px] bg-[#8dc540]/15 blur-[50px] rounded-full pointer-events-none" />
 
-      <div className="container mx-auto max-w-7xl h-full flex flex-col md:flex-row items-center gap-8 md:gap-20 relative z-10">
+      <div className="container mx-auto max-w-7xl h-full flex flex-col md:flex-row items-center gap-2 md:gap-20 relative z-10">
 
         {/* Left Column: Content */}
         <motion.div
@@ -48,7 +35,8 @@ export function Hero() {
           <div className="flex flex-col">
             <h1 className="text-4xl md:text-[48px] font-bold text-[#1f2937] leading-tight font-['Li_Ador_Noirrit'] tracking-tight">
               {t('hero.title.prefix')} <br />
-              {t('hero.title.your')} <span className="relative inline-block text-[#8dc540]">
+              {t('hero.title.your')} <br />
+              <span className="relative inline-block text-[#8dc540]">
                 {t('hero.title.vitality')}
                 {/* Underline SVG */}
                 <svg className="absolute w-full h-3 bottom-1 left-0 translate-y-full" viewBox="0 0 258 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -90,38 +78,12 @@ export function Hero() {
 
           {/* Main Product Image Container */}
           <div className="relative flex flex-col items-center gap-6">
-            <div className="relative w-[320px] h-[320px] md:w-[450px] md:h-[450px] rounded-[75px] overflow-hidden shadow-2xl bg-white/10 backdrop-blur-sm z-10">
-              <AnimatePresence>
-                <motion.div
-                  key={currentImageIndex}
-                  initial={{ opacity: 0, scale: 0.95 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  exit={{ opacity: 0, scale: 1.05 }}
-                  transition={{ duration: 0.8, ease: "easeInOut" }}
-                  className="absolute inset-0 w-full h-full"
-                >
-                  <ImageWithFallback
-                    src={heroImages[currentImageIndex]}
-                    alt="Sultan E Tarkeeb Product"
-                    className="w-full h-full object-cover scale-110"
-                  />
-                </motion.div>
-              </AnimatePresence>
-            </div>
-
-            {/* Carousel Dots */}
-            <div className="flex items-center gap-3 z-20">
-              {heroImages.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => setCurrentImageIndex(index)}
-                  className={`h-3 rounded-full transition-all duration-300 ${index === currentImageIndex
-                    ? "w-8 bg-[#8dc540]"
-                    : "w-3 bg-gray-300 hover:bg-[#8dc540]/50"
-                    }`}
-                  aria-label={`Go to slide ${index + 1}`}
-                />
-              ))}
+            <div className="relative w-[320px] h-[320px] md:w-[450px] md:h-[450px] rounded-[75px] overflow-hidden shadow-2xl bg-white/10 backdrop-blur-sm z-10 mt-6 md:mt-0">
+              <ImageWithFallback
+                src='/sdfsdg.png'
+                alt="Sultan E Tarkeeb Product"
+                className="w-full h-full object-cover scale-110"
+              />
             </div>
           </div>
 
