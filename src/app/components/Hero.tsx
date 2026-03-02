@@ -5,9 +5,6 @@ import { ImageWithFallback } from './figma/ImageWithFallback';
 import { useLanguage } from '../context/LanguageContext';
 
 // Figma Assets
-import imgAhmedKPortrait from "figma:asset/313744e84df97594724fc8668885f33555de352a.png";
-import imgSteveJPortrait from "figma:asset/ca5325972fd76f553b7cc3d3c7088723c6d50d6b.png";
-import imgRahulMPortrait from "figma:asset/cada0639f302047ac82f31e521b91301b4227070.png";
 import imgProduct from "figma:asset/55a06a16a8064de142f2ba0e0b678861ff0c06e1.png";
 import imgProduct2 from "figma:asset/067a97b9a29a0b1c63f0f577122adf2b41bf9376.png";
 import imgProduct3 from "figma:asset/f754fa94ae81e4f8fe284a9dac2ce1ed14fd82da.png";
@@ -25,19 +22,19 @@ export function Hero() {
     return () => clearInterval(interval);
   }, []);
   return (
-    <section className="relative w-full bg-[#F9FAFB] overflow-hidden font-['Li_Ador_Noirrit'] pt-[100px] md:pt-[140px] pb-7 md:pb-9 px-4 md:px-8">
+    <section className="relative w-full bg-[#F9FAFB] overflow-hidden font-['Li_Ador_Noirrit'] pt-[80px] md:pt-[140px] pb-7 md:pb-9 px-4 md:px-8">
       {/* Background Blurs */}
       <div className="absolute top-[-266px] left-[-266px] w-[800px] h-[800px] bg-[#8dc540]/15 blur-[60px] rounded-full pointer-events-none" />
       <div className="absolute bottom-[-200px] right-[-200px] w-[600px] h-[600px] bg-[#8dc540]/15 blur-[50px] rounded-full pointer-events-none" />
 
-      <div className="container mx-auto max-w-7xl h-full flex flex-col md:flex-row items-center gap-12 md:gap-20 relative z-10">
+      <div className="container mx-auto max-w-7xl h-full flex flex-col md:flex-row items-center gap-8 md:gap-20 relative z-10">
 
         {/* Left Column: Content */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          className="flex-1 flex flex-col items-start gap-8"
+          className="flex-1 flex flex-col items-start gap-5 md:gap-8"
         >
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#8dc540]/10 border border-[#8dc540]/20 rounded-full">
@@ -67,8 +64,8 @@ export function Hero() {
             <p>{t('hero.subtitle.2')}</p>
           </div>
 
-          {/* CTA & Social Proof */}
-          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 w-full">
+          {/* CTA */}
+          <div className="flex items-start w-full">
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -78,25 +75,11 @@ export function Hero() {
                   section.scrollIntoView({ behavior: 'smooth' });
                 }
               }}
-              className="bg-[#e87b00] text-white px-10 py-4 rounded-full font-bold text-xl flex items-center gap-3 shadow-[0px_20px_25px_-5px_rgba(232,123,0,0.2)] hover:shadow-[0px_25px_30px_-5px_rgba(232,123,0,0.3)] transition-all font-['Li_Ador_Noirrit'] cursor-pointer"
+              className="bg-[#e87b00] text-white px-10 py-4 rounded-full font-bold text-xl flex items-center gap-3 shadow-[0px_20px_25px_-5px_rgba(232,123,0,0.2)] hover:shadow-[0px_25px_30px_-5px_rgba(232,123,0,0.3)] transition-all font-['Li_Ador_Noirrit'] cursor-pointer max-w-full justify-center"
             >
               <ShoppingCart className="w-5 h-5" />
               <span>{t('hero.cta')}</span>
             </motion.button>
-
-            <div className="flex items-center gap-4">
-              <div className="flex -space-x-3">
-                {[imgAhmedKPortrait, imgSteveJPortrait, imgRahulMPortrait].map((src, i) => (
-                  <div key={i} className="w-10 h-10 rounded-full border-2 border-white overflow-hidden bg-gray-200">
-                    <img src={src} alt="User" className="w-full h-full object-cover" />
-                  </div>
-                ))}
-              </div>
-              <div className="flex flex-col font-['Li_Ador_Noirrit']">
-                <span className="text-[#0f172a] font-bold text-sm">{t('hero.social.count')}</span>
-                <span className="text-[#475569] text-xs font-medium">{t('hero.social.label')}</span>
-              </div>
-            </div>
           </div>
         </motion.div>
 
