@@ -361,7 +361,7 @@ function Heading5() {
   return (
     <div className="-translate-x-1/2 absolute content-stretch flex flex-col items-start left-1/2 top-[280px]" data-name="Heading 3">
       <div className="flex flex-col font-['Li_Ador_Noirrit:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#0f172a] text-[20px] whitespace-nowrap">
-        <p className="leading-[28px]">কালিজিরা</p>
+        <p className="leading-[28px]">কালোজিরা</p>
       </div>
     </div>
   );

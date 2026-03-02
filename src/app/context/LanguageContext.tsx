@@ -154,7 +154,7 @@ const translations: Record<string, Record<Language, string>> = {
   'ingredient.4.desc': { bn: 'মানসিক চাপ মুক্তি', en: 'Stress Relief' },
   'ingredient.5.name': { bn: 'জিনসেং', en: 'Ginseng' },
   'ingredient.5.desc': { bn: 'শারীরিক সক্ষমতা', en: 'Physical Ability' },
-  'ingredient.6.name': { bn: 'কালিজিরা', en: 'Black Cumin' },
+  'ingredient.6.name': { bn: 'কালোজিরা', en: 'Black Cumin' },
   'ingredient.6.desc': { bn: 'রোগ প্রতিরোধ ক্ষমতা', en: 'Immunity' },
   'ingredient.7.name': { bn: 'আখরোট', en: 'Walnut' },
   'ingredient.7.desc': { bn: 'মস্তিষ্কের স্বাস্থ্য', en: 'Brain Health' },
