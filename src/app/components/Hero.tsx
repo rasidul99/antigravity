@@ -9,12 +9,12 @@ export function Hero() {
 
 
   return (
-    <section className="relative w-full bg-[#F9FAFB] overflow-hidden font-['Li_Ador_Noirrit'] pt-[80px] md:pt-[140px] pb-7 md:pb-9 px-4 md:px-8">
+    <section className="relative w-full bg-[#F9FAFB] overflow-hidden font-['Li_Ador_Noirrit'] pt-[60px] md:pt-[140px] pb-2 md:pb-9 px-4 md:px-8">
       {/* Background Blurs */}
       <div className="absolute top-[-266px] left-[-266px] w-[800px] h-[800px] bg-[#8dc540]/15 blur-[60px] rounded-full pointer-events-none" />
       <div className="absolute bottom-[-200px] right-[-200px] w-[600px] h-[600px] bg-[#8dc540]/15 blur-[50px] rounded-full pointer-events-none" />
 
-      <div className="container mx-auto max-w-7xl h-full flex flex-col md:flex-row items-center gap-2 md:gap-20 relative z-10">
+      <div className="container mx-auto max-w-7xl h-full flex flex-col md:flex-row items-center gap-0 md:gap-20 relative z-10">
 
         {/* Left Column: Content */}
         <motion.div
@@ -34,7 +34,8 @@ export function Hero() {
           {/* Headline */}
           <div className="flex flex-col">
             <h1 className="text-4xl md:text-[48px] font-bold text-[#1f2937] leading-tight font-['Li_Ador_Noirrit'] tracking-tight">
-              {t('hero.title.prefix')} <br />
+              {t('hero.title.prefix1')} <br />
+              {t('hero.title.prefix2')} <br />
               {t('hero.title.your')} <br />
               <span className="relative inline-block text-[#8dc540]">
                 {t('hero.title.vitality')}
@@ -72,13 +73,13 @@ export function Hero() {
         </motion.div>
 
         {/* Right Column: Image & Cards */}
-        <div className="flex-1 relative flex items-center justify-center w-full min-h-[420px] md:min-h-[500px]">
+        <div className="flex-1 relative flex items-center justify-center w-full min-h-[350px] md:min-h-[500px]">
           {/* Gradient Blur Background for Product */}
-          <div className="absolute w-[450px] h-[450px] rounded-[30%_70%_70%_30%/30%_30%_70%_70%] bg-gradient-to-br from-[#8dc540]/20 to-[#8dc540]/5 blur-xl animate-blob" />
+          <div className="absolute w-[350px] h-[350px] md:w-[450px] md:h-[450px] rounded-[30%_70%_70%_30%/30%_30%_70%_70%] bg-gradient-to-br from-[#8dc540]/20 to-[#8dc540]/5 blur-xl animate-blob" />
 
           {/* Main Product Image Container */}
-          <div className="relative flex flex-col items-center gap-6">
-            <div className="relative w-[320px] h-[320px] md:w-[450px] md:h-[450px] rounded-[75px] overflow-hidden shadow-2xl bg-white/10 backdrop-blur-sm z-10 mt-6 md:mt-0">
+          <div className="relative flex flex-col items-center gap-6 mt-4 md:mt-0">
+            <div className="relative w-[320px] h-[320px] md:w-[450px] md:h-[450px] rounded-[30px] md:rounded-[75px] overflow-hidden shadow-2xl bg-white/10 backdrop-blur-sm z-10">
               <ImageWithFallback
                 src='/sdfsdg.png'
                 alt="Sultan E Tarkeeb Product"
