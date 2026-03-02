@@ -9,12 +9,12 @@ export function Hero() {
 
 
   return (
-    <section className="relative w-full bg-[#F9FAFB] overflow-hidden font-['Li_Ador_Noirrit'] pt-[60px] md:pt-[140px] pb-2 md:pb-9 px-4 md:px-8">
+    <section className="relative w-full bg-[#F9FAFB] overflow-hidden font-['Li_Ador_Noirrit'] pt-[60px] md:pt-[140px] px-4 md:px-8">
       {/* Background Blurs */}
       <div className="absolute top-[-266px] left-[-266px] w-[800px] h-[800px] bg-[#8dc540]/15 blur-[60px] rounded-full pointer-events-none" />
       <div className="absolute bottom-[-200px] right-[-200px] w-[600px] h-[600px] bg-[#8dc540]/15 blur-[50px] rounded-full pointer-events-none" />
 
-      <div className="container mx-auto max-w-7xl h-full flex flex-col md:flex-row items-center gap-0 md:gap-20 relative z-10">
+      <div className="container mx-auto max-w-7xl h-full flex flex-col md:flex-row items-center gap-2 md:gap-20 relative z-10">
 
         {/* Left Column: Content */}
         <motion.div
@@ -24,7 +24,7 @@ export function Hero() {
           className="flex-1 flex flex-col items-start gap-5 md:gap-8"
         >
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#8dc540]/10 border border-[#8dc540]/20 rounded-full">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#8dc540]/10 border border-[#8dc540]/20 rounded-full mt-4 md:mt-0">
             <CheckCircle className="w-4 h-4 text-[#8dc540]" />
             <span className="text-[#8dc540] font-bold text-sm font-['Li_Ador_Noirrit']">
               {t('hero.badge')}
@@ -34,8 +34,7 @@ export function Hero() {
           {/* Headline */}
           <div className="flex flex-col">
             <h1 className="text-4xl md:text-[48px] font-bold text-[#1f2937] leading-tight font-['Li_Ador_Noirrit'] tracking-tight">
-              {t('hero.title.prefix1')} <br />
-              {t('hero.title.prefix2')} <br />
+              {t('hero.title.prefix1')} {t('hero.title.prefix2')} <br />
               {t('hero.title.your')} <br />
               <span className="relative inline-block text-[#8dc540]">
                 {t('hero.title.vitality')}
@@ -49,8 +48,8 @@ export function Hero() {
 
           {/* Subheadline */}
           <div className="text-[#475569] text-lg md:text-xl font-medium font-['Li_Ador_Noirrit'] max-w-xl leading-relaxed">
-            <p>{t('hero.subtitle.1')}</p>
-            <p>{t('hero.subtitle.2')}</p>
+            <p className="inline">{t('hero.subtitle.1')} </p>
+            <p className="inline">{t('hero.subtitle.2')}</p>
           </div>
 
           {/* CTA */}
@@ -73,17 +72,17 @@ export function Hero() {
         </motion.div>
 
         {/* Right Column: Image & Cards */}
-        <div className="flex-1 relative flex items-center justify-center w-full min-h-[350px] md:min-h-[500px]">
+        <div className="flex-1 relative flex items-center justify-center w-full min-h-[300px] md:min-h-[500px]">
           {/* Gradient Blur Background for Product */}
           <div className="absolute w-[350px] h-[350px] md:w-[450px] md:h-[450px] rounded-[30%_70%_70%_30%/30%_30%_70%_70%] bg-gradient-to-br from-[#8dc540]/20 to-[#8dc540]/5 blur-xl animate-blob" />
 
           {/* Main Product Image Container */}
           <div className="relative flex flex-col items-center gap-6 mt-4 md:mt-0">
-            <div className="relative w-[320px] h-[320px] md:w-[450px] md:h-[450px] rounded-[30px] md:rounded-[75px] overflow-hidden shadow-2xl bg-white/10 backdrop-blur-sm z-10">
+            <div className="relative w-[320px] h-[280px] md:w-[450px] md:h-[450px] rounded-[30px] md:rounded-[75px] overflow-hidden bg-transparent z-10 flex items-end justify-center">
               <ImageWithFallback
                 src='/sdfsdg.png'
                 alt="Sultan E Tarkeeb Product"
-                className="w-full h-full object-cover scale-110"
+                className="w-full h-auto object-cover md:scale-110 translate-y-4 md:translate-y-0"
               />
             </div>
           </div>
@@ -93,7 +92,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.6 }}
-            className="absolute bottom-14 -right-4 md:bottom-28 md:-right-8 bg-white/70 backdrop-blur-md p-4 rounded-2xl shadow-lg border border-white/50 flex items-center gap-3 max-w-[200px] z-30"
+            className="absolute bottom-8 -right-4 md:bottom-28 md:-right-8 bg-white/70 backdrop-blur-md p-4 rounded-2xl shadow-lg border border-white/50 flex items-center gap-3 max-w-[200px] z-30"
           >
             <div className="w-10 h-10 bg-[#ffedd5] rounded-full flex items-center justify-center text-[#EA580C]">
               <ShieldCheck className="w-5 h-5" />
