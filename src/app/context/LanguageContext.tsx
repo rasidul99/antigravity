@@ -14,17 +14,13 @@ const translations: Record<string, Record<Language, string>> = {
     bn: '১০০% প্রাকৃতিক ভেষজ উপাদান',
     en: '100% Natural Herbal Ingredients'
   },
-  'hero.title.prefix1': {
-    bn: 'শত বছর ধরে ব্যবহৃত ভেষজ',
+  'hero.title.prefix': {
+    bn: 'শত বছর ধরে ব্যবহৃত ভেষজ উপাদানে',
     en: 'Revitalize with centuries-old'
-  },
-  'hero.title.prefix2': {
-    bn: 'উপাদানে',
-    en: 'herbal ingredients'
   },
   'hero.title.your': {
     bn: 'নতুনভাবে',
-    en: 'and'
+    en: 'herbal ingredients'
   },
   'hero.title.vitality': {
     bn: 'উদ্যম ফিরিয়ে আনুন।',
