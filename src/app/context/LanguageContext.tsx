@@ -15,16 +15,16 @@ const translations: Record<string, Record<Language, string>> = {
     en: 'Natural Herbal Ingredients'
   },
   'hero.title.prefix': {
-    bn: 'ফিরিয়ে আনুন',
-    en: 'Bring back'
+    bn: 'শত বছর ধরে ব্যবহৃত ভেষজ উপাদানে',
+    en: 'Revitalize with centuries-old'
   },
   'hero.title.your': {
-    bn: 'আপনার',
-    en: 'your'
+    bn: 'নতুনভাবে',
+    en: 'herbal ingredients'
   },
   'hero.title.vitality': {
-    bn: 'প্রাণশক্তি',
-    en: 'Vitality'
+    bn: 'উদ্যম ফিরিয়ে আনুন।',
+    en: 'bring back vitality.'
   },
   'hero.subtitle.1': {
     bn: 'হারানো যৌবন ও শক্তি ফিরে পেতে ১০০% কার্যকরী প্রাকৃতিক সমাধান।',
@@ -47,12 +47,12 @@ const translations: Record<string, Record<Language, string>> = {
     en: 'Satisfied Customers'
   },
   'hero.card1.label': {
-    bn: 'গ্যারান্টি',
-    en: 'Guarantee'
+    bn: 'কার্যকারিতা নিয়ে',
+    en: 'About effectiveness'
   },
   'hero.card1.value': {
-    bn: 'প্রিমিয়াম কোয়ালিটি',
-    en: 'Premium Quality'
+    bn: 'দুশ্চিন্তা একদমই নেই',
+    en: 'Absolutely no worries'
   },
   'hero.card2.label': {
     bn: 'উপাদান',
