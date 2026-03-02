@@ -9,7 +9,7 @@ import imgProduct from "figma:asset/55a06a16a8064de142f2ba0e0b678861ff0c06e1.png
 import imgProduct2 from "figma:asset/067a97b9a29a0b1c63f0f577122adf2b41bf9376.png";
 import imgProduct3 from "figma:asset/f754fa94ae81e4f8fe284a9dac2ce1ed14fd82da.png";
 
-const heroImages = [imgProduct, imgProduct2, imgProduct3];
+const heroImages = [imgProduct, '/sdfsdg.png', imgProduct3];
 
 export function Hero() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
