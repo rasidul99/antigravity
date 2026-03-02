@@ -42,8 +42,7 @@ export function Hero() {
 
           {/* Subheadline */}
           <div className="text-[#475569] text-lg md:text-xl font-medium font-['Li_Ador_Noirrit'] max-w-xl leading-relaxed">
-            <p>{t('hero.subtitle.1')}</p>
-            <p>{t('hero.subtitle.2')}</p>
+            <p>{t('hero.subtitle.1')} {t('hero.subtitle.2')}</p>
           </div>
 
           {/* CTA */}
@@ -66,7 +65,7 @@ export function Hero() {
         </motion.div>
 
         {/* Right Column: Image & Cards */}
-        <div className="flex-1 relative flex items-center justify-center w-full min-h-[420px] md:min-h-[500px]">
+        <div className="flex-1 relative flex items-center justify-center w-full min-h-[350px] md:min-h-[500px] mt-3 md:mt-0">
           {/* Gradient Blur Background for Product */}
           <div className="absolute w-[450px] h-[450px] rounded-[30%_70%_70%_30%/30%_30%_70%_70%] bg-gradient-to-br from-[#8dc540]/20 to-[#8dc540]/5 blur-xl animate-blob" />
 
