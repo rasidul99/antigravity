@@ -46,7 +46,7 @@ export function Hero() {
 
           {/* Headline */}
           <div className="flex flex-col">
-            <h1 className="text-5xl md:text-[72px] font-bold text-[#1f2937] leading-tight font-['Li_Ador_Noirrit'] tracking-tight">
+            <h1 className="text-4xl md:text-[48px] font-bold text-[#1f2937] leading-tight font-['Li_Ador_Noirrit'] tracking-tight">
               {t('hero.title.prefix')} <br />
               {t('hero.title.your')} <span className="relative inline-block text-[#8dc540]">
                 {t('hero.title.vitality')}
