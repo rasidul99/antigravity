@@ -141,21 +141,6 @@ export function Hero() {
             </div>
           </motion.div>
 
-          {/* Floating Card 2: 100% Natural (Top Left) */}
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.7, duration: 0.6 }}
-            className="absolute -top-4 -left-4 md:top-20 md:-left-12 bg-white/70 backdrop-blur-md p-4 rounded-2xl shadow-lg border border-white/50 flex items-center gap-3 max-w-[180px] z-30"
-          >
-            <div className="w-10 h-10 bg-[#dcfce7] rounded-full flex items-center justify-center text-[#16A34A]">
-              <Leaf className="w-5 h-5" />
-            </div>
-            <div className="font-['Li_Ador_Noirrit']">
-              <p className="text-xs text-[#64748b]">{t('hero.card2.label')}</p>
-              <p className="text-sm font-bold text-[#1e293b]">{t('hero.card2.value')}</p>
-            </div>
-          </motion.div>
 
         </div>
       </div>

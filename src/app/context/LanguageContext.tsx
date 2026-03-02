@@ -11,8 +11,8 @@ interface LanguageContextType {
 const translations: Record<string, Record<Language, string>> = {
   // Hero Section
   'hero.badge': {
-    bn: 'প্রাকৃতিক ভেষজ উপাদান',
-    en: 'Natural Herbal Ingredients'
+    bn: '১০০% প্রাকৃতিক ভেষজ উপাদান',
+    en: '100% Natural Herbal Ingredients'
   },
   'hero.title.prefix': {
     bn: 'শত বছর ধরে ব্যবহৃত ভেষজ উপাদানে',
