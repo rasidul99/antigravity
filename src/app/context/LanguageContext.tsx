@@ -142,6 +142,10 @@ const translations: Record<string, Record<Language, string>> = {
     bn: 'যা আপনার শক্তি বৃদ্ধিতে সহায়তা করে',
     en: 'Which helps increase your energy'
   },
+  'ingredients.benefits.title': {
+    bn: 'উপকারিতা',
+    en: 'Benefits'
+  },
 
   // Ingredient Items
   'ingredient.1.name': { bn: 'শিলাজিৎ', en: 'Shilajit' },
@@ -349,6 +353,14 @@ const translations: Record<string, Record<Language, string>> = {
   'order.disclaimer': {
     bn: 'অর্ডার কনফার্ম বাটনে ক্লিক করার পর আমাদের প্রতিনিধি আপনাকে কল করবেন।',
     en: 'Our representative will call you after clicking the confirm order button.'
+  },
+  'order.free_delivery.title': {
+    bn: 'সারা বাংলাদেশে হোম ডেলিভারি সম্পূর্ণ ফ্রি।',
+    en: 'Free home delivery all over Bangladesh.'
+  },
+  'order.free_delivery.subtitle': {
+    bn: 'আপনি চাইলে আজই অর্ডার কনফার্ম করতে পারেন।',
+    en: 'You can confirm your order today if you want.'
   },
 
   // Social Proof & FAQ Section

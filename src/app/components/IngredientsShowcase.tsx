@@ -71,7 +71,7 @@ export function IngredientsShowcase() {
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-5xl font-bold text-[#1F2937] font-['Li_Ador_Noirrit'] mb-4">
-            উপকারিতা
+            {t('ingredients.benefits.title')}
           </h2>
           <p className="text-[#4B5563] text-lg md:text-xl max-w-3xl mx-auto leading-relaxed mb-6">
             {t('ingredients.subtitle')}

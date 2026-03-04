@@ -660,10 +660,10 @@ ${itemsList}
                 <div className="space-y-4 mt-6">
                   <div className="bg-[#8dc540]/10 border border-[#8dc540]/30 rounded-xl p-4 md:p-5 text-center">
                     <p className="text-[#1F2937] font-bold text-base md:text-lg mb-1 leading-relaxed font-['Li_Ador_Noirrit']">
-                      সারা বাংলাদেশে হোম ডেলিভারি সম্পূর্ণ ফ্রি।
+                      {t('order.free_delivery.title')}
                     </p>
                     <p className="text-[#374151] font-medium text-sm md:text-base font-['Li_Ador_Noirrit']">
-                      আপনি চাইলে আজই অর্ডার কনফার্ম করতে পারেন। <span className="font-bold text-[#8dc540] uppercase tracking-wide ml-1">(Free)</span>
+                      {t('order.free_delivery.subtitle')} <span className="font-bold text-[#8dc540] uppercase tracking-wide ml-1">(Free)</span>
                     </p>
                   </div>
                 </div>
