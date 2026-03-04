@@ -10,7 +10,7 @@ export function Hero() {
       <div className="absolute top-[-266px] left-[-266px] w-[800px] h-[800px] bg-[#8dc540]/15 blur-[60px] rounded-full pointer-events-none" />
       <div className="absolute bottom-[-200px] right-[-200px] w-[600px] h-[600px] bg-[#8dc540]/15 blur-[50px] rounded-full pointer-events-none" />
 
-      <div className="container mx-auto max-w-7xl h-full flex flex-col md:flex-row items-center gap-0 md:gap-20 relative z-10">
+      <div className="container mx-auto max-w-7xl h-full flex flex-col md:flex-row items-center gap-8 md:gap-20 relative z-10">
 
         {/* Left Column: Content */}
         <motion.div
